@@ -7,10 +7,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
+      <p>Nasa's Image Of The Day 🚀!</p>
       <ImgGrid limit={1} />
     </div>
   );

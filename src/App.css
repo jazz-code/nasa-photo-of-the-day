@@ -31,3 +31,13 @@
     transform: rotate(360deg);
   }
 }
+.img-grid {
+  width: 400px;
+  height: 600px;
+  background: #61dafb;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+.img-card {
+  background-color: rgb(0, 247, 255);
+}
