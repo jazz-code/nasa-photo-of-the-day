@@ -8,10 +8,11 @@ export default function ImgGrid() {
   const [explanation, setExplanation] = useState([]);
   const [date, setDate] = useState(14);
 
+  //`https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2019-07-${date}`
   useEffect(() => {
     axios
       .get(
-        `https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2019-07-${date}`
+        `https://api.nasa.gov/planetary/apod?api_key=5DVGERmcIOdjnPbBBrCLajpzKNWGe7LtRSAPCdBe&date=2019-07-${date}`
       )
       .then(res => {
         console.log(res.data.url);
