@@ -17,5 +17,11 @@ export default function ImgGrid() {
       });
   }, []);
 
-  return <div className="img-grid" />;
+  return (
+    <div className="img-grid">
+      {data.map(imgUrl => (
+        <ImgCard key={imgUrl} imgUrl={imgUrl} />
+      ))}
+    </div>
+  );
 }
