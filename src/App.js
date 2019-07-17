@@ -7,7 +7,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <p>Nasa's Image Of The Day 🚀!</p>
+      <p className="intro">NASA Image Of The Day 🚀!</p>
       <ImgGrid limit={1} />
     </div>
   );
