@@ -4,7 +4,7 @@ import ImgCard from "./ImgCard";
 
 export default function ImgGrid() {
   const [img, setImg] = useState([]);
-  console.log(img);
+  const [title, setTitle] = useState([]);
 
   useEffect(() => {
     axios
@@ -15,15 +15,21 @@ export default function ImgGrid() {
         console.log(res.data.url);
         const imgUrl = res.data.url;
         setImg(imgUrl);
+        const imgTitle = res.data.title;
+        setTitle(imgTitle);
       });
   }, []);
 
   return (
     <div className="img-grid">
-      {/* {img.map(url => {
-        return <ImgCard key={url} imgUrl={url} />;
-      })} */}
+      <ImgCard imgTitle={title} />
       <ImgCard imgUrl={img} />
     </div>
   );
+}
+
+{
+  /* {img.map(url => {
+        return <ImgCard key={url} imgUrl={url} />;
+      })} */
 }
