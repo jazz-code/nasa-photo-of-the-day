@@ -5,6 +5,7 @@ import ImgCard from "./ImgCard";
 export default function ImgGrid() {
   const [img, setImg] = useState([]);
   const [title, setTitle] = useState([]);
+  const [explanation, setExplanation] = useState([]);
 
   useEffect(() => {
     axios
@@ -17,6 +18,8 @@ export default function ImgGrid() {
         setImg(imgUrl);
         const imgTitle = res.data.title;
         setTitle(imgTitle);
+        const explanation = res.data.explanation;
+        setExplanation(explanation);
       });
   }, []);
 
@@ -24,6 +27,7 @@ export default function ImgGrid() {
     <div className="img-grid">
       <ImgCard imgTitle={title} />
       <ImgCard imgUrl={img} />
+      <ImgCard explanation={explanation} />
     </div>
   );
 }
