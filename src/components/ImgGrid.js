@@ -25,9 +25,7 @@ export default function ImgGrid() {
 
   return (
     <div className="img-grid">
-      <ImgCard imgTitle={title} />
-      <ImgCard imgUrl={img} />
-      <ImgCard explanation={explanation} />
+      <ImgCard imgTitle={title} imgUrl={img} explanation={explanation} />
     </div>
   );
 }
