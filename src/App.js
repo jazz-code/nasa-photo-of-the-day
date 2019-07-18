@@ -1,8 +1,7 @@
 import React from "react";
-import ImgCard from "./components/ImgCard";
 import ImgGrid from "./components/ImgGrid";
-
-import "./App.css";
+// import "./App.css";
+import styled from "styled-components";
 
 function App() {
   return (
