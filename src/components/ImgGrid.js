@@ -27,13 +27,13 @@ export default function ImgGrid() {
 
   return (
     <div className="img-grid">
-      <button onClick={() => setDate(date - 1)}>Previous</button>
-      <button onClick={() => setDate(date + 1)}>Next</button>
+      <button onClick={() => setDate(date - 1)}>Previous Image</button>
+      <button onClick={() => setDate(date + 1)}>Next Image</button>
       <ImgCard imgTitle={title} imgUrl={img} explanation={explanation} />
     </div>
   );
 }
-
+//moment js
 {
   /* {img.map(url => {
         return <ImgCard key={url} imgUrl={url} />;
