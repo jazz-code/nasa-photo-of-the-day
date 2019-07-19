@@ -8,14 +8,14 @@ export default function ImgCard({ imgUrl, imgTitle, explanation }) {
       <Image src={imgUrl} wrapped ui={false} />
       <Card.Content>
         <Card.Header>{imgTitle}</Card.Header>
-        <Card.Meta>Joined in 2016</Card.Meta>
+        {/* <Card.Meta>Joined in 2016</Card.Meta> */}
         <Card.Description>{explanation}</Card.Description>
       </Card.Content>
       <Card.Content extra>
-        <a>
+        {/* <a>
           <Icon name="user" />
           10 Friends
-        </a>
+        </a> */}
       </Card.Content>
     </Card>
     // <div className="img-card">

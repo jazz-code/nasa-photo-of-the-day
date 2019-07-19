@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import ImgCard from "./ImgCard";
+import { Button } from "semantic-ui-react";
 
 export default function ImgGrid() {
   const [img, setImg] = useState([]);
@@ -28,8 +29,10 @@ export default function ImgGrid() {
 
   return (
     <div className="img-grid">
-      <button onClick={() => setDate(date - 1)}>Previous Image</button>
-      <button onClick={() => setDate(date + 1)}>Next Image</button>
+      <div className="btn-container">
+        <Button onClick={() => setDate(date - 1)}>Previous Image</Button>
+        <Button onClick={() => setDate(date + 1)}>Next Image</Button>
+      </div>
       <ImgCard imgTitle={title} imgUrl={img} explanation={explanation} />
     </div>
   );

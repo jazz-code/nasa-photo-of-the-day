@@ -1,6 +1,6 @@
 import React from "react";
 import ImgGrid from "./components/ImgGrid";
-// import "./App.css";
+import "./App.css";
 import styled from "styled-components";
 
 function App() {
